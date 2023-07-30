@@ -15,6 +15,8 @@
     <module>isomer-user</module>
     <module>isomer-gateway</module>
     <module>isomer-redis</module>
+    <module>isomer-messaging</module>
+    <module>isomer-device</module>
   </modules>
 
   <properties>
@@ -86,6 +88,11 @@
   </dependencyManagement>
 
   <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
