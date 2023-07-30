@@ -4,39 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/isomer-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/exception/IllegalOriginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/pojo/ApiResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/test/java/com/likain/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/IsomerGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/config/GlobalCorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/filter/OriginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/filter/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/test/java/com/isomer/gateway/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/core/IsomerRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/core/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/exception/ExpireNoExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/exception/RedisServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-redis/src/test/java/com/isomer/redis/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/IsomerUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/aspect/OriginCheckAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/exception/handler/IsomerUserExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-user/src/test/java/com/isomer/user/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="delete unsage test">
+      <change beforePath="$PROJECT_DIR$/isomer-common/target/classes/com/isomer/common/enums/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-common/target/classes/com/isomer/common/exception/IllegalOriginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-common/target/classes/com/isomer/common/pojo/ApiResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-common/target/classes/com/isomer/common/utils/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-gateway/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-gateway/target/classes/com/isomer/gateway/IsomerGatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-gateway/target/classes/com/isomer/gateway/config/GlobalCorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-gateway/target/classes/com/isomer/gateway/filter/OriginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-gateway/target/classes/com/isomer/gateway/filter/XssFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/com/isomer/redis/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/com/isomer/redis/core/IsomerRedisSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/com/isomer/redis/core/RedisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/com/isomer/redis/exception/ExpireNoExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-redis/target/classes/com/isomer/redis/exception/RedisServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/com/isomer/user/IsomerUserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/com/isomer/user/aspect/OriginCheckAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/com/isomer/user/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/com/isomer/user/exception/handler/IsomerUserExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/com/isomer/user/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-user/target/classes/mapper/UserMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,12 +140,32 @@
       <workItem from="1690511134050" duration="16592000" />
       <workItem from="1690533457788" duration="2316000" />
       <workItem from="1690692120967" duration="149000" />
-      <workItem from="1690692299678" duration="1453000" />
+      <workItem from="1690692299678" duration="1879000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1690693943874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690693943874</updated>
+    </task>
+    <task id="LOCAL-00002" summary="delete unsage test">
+      <option name="closed" value="true" />
+      <created>1690694027968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690694027968</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="delete unsage test" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unsage test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

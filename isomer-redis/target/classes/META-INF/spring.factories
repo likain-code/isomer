@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.isomer.redis.config.RedisConfig,\
-  com.isomer.redis.core.RedisService
