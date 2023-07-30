@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/isomer-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/exception/IllegalOriginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/pojo/ApiResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/test/java/com/likain/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/IsomerGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/config/GlobalCorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/filter/OriginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/java/com/isomer/gateway/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-gateway/src/test/java/com/isomer/gateway/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/core/IsomerRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/core/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/exception/ExpireNoExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis/exception/RedisServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-redis/src/test/java/com/isomer/redis/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/IsomerUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/aspect/OriginCheckAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/exception/handler/IsomerUserExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-user/src/test/java/com/isomer/user/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/apache-maven-3.8.7/respo" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.8.7" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.8.7/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TA10cEIflKdJUFZQq3hoIhjrS1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "zulu-1.8",
+    "last_opened_file_path": "/Users/likain/java-project/isomer/isomer-redis/src/main/java/com/isomer/redis",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "e4d00d5ef34a466e409250a4653408b4"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/isomer-redis/src/main/java/com/isomer/redis" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.IsomerGatewayApplication">
+    <configuration name="IsomerGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="isomer-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.isomer.gateway.IsomerGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.isomer.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsomerUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="isomer-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.isomer.user.IsomerUserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.isomer.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.IsomerUserApplication" />
+        <item itemvalue="Spring Boot.IsomerGatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="" />
+      <created>1690470851683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690470851683</updated>
+      <workItem from="1690470852772" duration="1693000" />
+      <workItem from="1690507098669" duration="4018000" />
+      <workItem from="1690511134050" duration="16592000" />
+      <workItem from="1690533457788" duration="2316000" />
+      <workItem from="1690692120967" duration="149000" />
+      <workItem from="1690692299678" duration="1453000" />
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
