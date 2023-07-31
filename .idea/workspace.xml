@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="delete unsage test">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/IsomerDeviceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/test/java/com/isomer/device/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/IsomerConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/poll/MessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/test/java/com/isomer/messaging/PushTest.java" afterDir="false" />
+    <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="$USER_HOME$/apache-maven-3.8.7/respo" />
         <option name="mavenHome" value="$USER_HOME$/apache-maven-3.8.7" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.8.7/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -65,15 +60,14 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "zulu-1.8",
     "last_opened_file_path": "/Users/likain/java-project/isomer/isomer-redis/src/main/java/com/isomer/redis",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31350115",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "e4d00d5ef34a466e409250a4653408b4"
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "6a00c4e8e49cf044ccd7769172fd6c6f"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -171,7 +165,9 @@
       <workItem from="1690511134050" duration="16592000" />
       <workItem from="1690533457788" duration="2316000" />
       <workItem from="1690692120967" duration="149000" />
-      <workItem from="1690692299678" duration="6795000" />
+      <workItem from="1690692299678" duration="6942000" />
+      <workItem from="1690701137099" duration="1236000" />
+      <workItem from="1690766964690" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -197,14 +193,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690694372085</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <option name="closed" value="true" />
+      <created>1690700861272</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690700861272</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <option name="closed" value="true" />
+      <created>1690700935464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690700935464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="delete unsage test" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete unsage test" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

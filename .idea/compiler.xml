@@ -7,11 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="isomer-gateway" />
-        <module name="isomer-redis" />
         <module name="isomer-device" />
-        <module name="isomer-common" />
-        <module name="isomer-user" />
         <module name="isomer-messaging" />
       </profile>
     </annotationProcessing>
