@@ -22,6 +22,6 @@ public class PushTest {
 
     @Test
     public void push() {
-        kafkaTemplate.send("test", "color");
+        kafkaTemplate.send("testTopic", "color");
     }
 }

@@ -1,5 +1,6 @@
 package com.isomer.messaging;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,9 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2023/7/30 14:35
  */
 @SpringBootApplication
-public class IsomerConsumerApplication {
+@EnableDubbo
+public class IsomerMessagingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(IsomerConsumerApplication.class, args);
+        SpringApplication.run(IsomerMessagingApplication.class, args);
     }
 }
