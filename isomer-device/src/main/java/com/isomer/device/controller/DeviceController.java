@@ -1,12 +1,14 @@
 package com.isomer.device.controller;
 
+import com.isomer.pretreatment.generate.annotation.ValueGenerate;
+import com.isomer.pretreatment.validate.annotation.ParamValidate;
 import com.isomer.api.messaging.service.MessagingService;
 import com.isomer.common.pojo.ApiResult;
+import com.isomer.device.domain.DeviceBasic;
+import com.isomer.device.service.DeviceService;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Description:
@@ -20,12 +22,13 @@ public class DeviceController {
 
     @DubboReference
     private MessagingService messagingService;
+    @Autowired
+    private DeviceService deviceService;
 
-    @PostMapping("/reg")
-    public ApiResult<?> register(@RequestParam String id) {
-        return messagingService.register(id);
+    @PostMapping("/register")
+    public ApiResult<?> register(
+            @RequestBody @ValueGenerate
+            @ParamValidate(types = {String.class, Long.class, Integer.class}) DeviceBasic basic) {
+        return deviceService.register(basic);
     }
-
-    @PostMapping("/test")
-    public ApiResult<?> test(@RequestParam String topic, @RequestParam String msg) {return messagingService.test(topic, msg);}
 }

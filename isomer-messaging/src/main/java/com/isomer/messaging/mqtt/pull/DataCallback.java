@@ -17,7 +17,7 @@ public class DataCallback extends AbstractMqttCallback {
     }
 
     @Override
-    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
+    public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
         System.out.println("data: " + new String(mqttMessage.getPayload()));
     }
 

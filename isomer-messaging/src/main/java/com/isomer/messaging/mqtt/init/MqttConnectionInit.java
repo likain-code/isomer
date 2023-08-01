@@ -21,9 +21,9 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class MqttConnectionInit implements ApplicationRunner {
 
-    @Resource
+    @Autowired
     private MqttClient enable;
-    @Resource
+    @Autowired
     private MqttClient data;
     @Autowired
     private MqttProperties properties;

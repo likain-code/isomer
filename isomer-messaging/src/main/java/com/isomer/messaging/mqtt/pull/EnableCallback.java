@@ -17,7 +17,7 @@ public class EnableCallback extends AbstractMqttCallback {
     }
 
     @Override
-    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
+    public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
         System.out.println("enable: " + new String(mqttMessage.getPayload()));
     }
 

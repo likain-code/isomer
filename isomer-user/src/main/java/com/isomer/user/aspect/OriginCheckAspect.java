@@ -1,9 +1,8 @@
 package com.isomer.user.aspect;
 
-import com.isomer.common.enums.Status;
-import com.isomer.common.exception.IllegalOriginException;
 import com.isomer.common.utils.StringUtil;
 import com.isomer.redis.core.RedisService;
+import com.isomer.user.exception.IllegalOriginException;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -41,7 +40,8 @@ public class OriginCheckAspect {
         String code = request.getHeader("Code");
 
         if (StringUtil.isNullOrEmpty(code) || !redisService.hasKey(code)) {
-            throw new IllegalOriginException(Status.ILLEGAL_ORIGIN_EXCEPTION);
+            throw new IllegalOriginException(
+                    "Request for [" + request.getRequestURI() + "] has been blocked since it is not from global gateway");
         }
 
         redisService.deleteKey(code);

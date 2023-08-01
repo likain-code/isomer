@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="isomer-gateway" />
+        <module name="isomer-pretreatment" />
         <module name="isomer-redis" />
         <module name="isomer-common" />
         <module name="isomer-user" />

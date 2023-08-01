@@ -17,9 +17,4 @@ public class MessagingServiceImpl implements MessagingService {
     public ApiResult<?> register(String id) {
         return ApiResult.succeed();
     }
-
-    @Override
-    public ApiResult<?> test(String topic, String msg) {
-        return ApiResult.succeed();
-    }
 }

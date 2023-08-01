@@ -8,7 +8,10 @@ package com.isomer.common.enums;
  */
 public enum Status {
     SUCCEED(1000, "Succeed"),
-    ILLEGAL_ORIGIN_EXCEPTION(1001, "Illegal request origin")
+
+    ILLEGAL_ORIGIN_EXCEPTION(1001, "Illegal request origin"),
+
+    ILLEGAL_PARAM_EXCEPTION(1002, "Illegal param"),
     ;
 
     private final Integer code;

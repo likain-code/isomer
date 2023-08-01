@@ -9,5 +9,4 @@ import org.eclipse.paho.client.mqttv3.MqttCallback;
  * @since 2023/7/31 21:26
  */
 public abstract class AbstractMqttCallback implements MqttCallback {
-
 }

@@ -11,6 +11,4 @@ import com.isomer.common.pojo.ApiResult;
 public interface MessagingService {
 
     ApiResult<?> register(String id);
-
-    ApiResult<?> test(String topic, String msg);
 }

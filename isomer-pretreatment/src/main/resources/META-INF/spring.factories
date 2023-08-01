@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.isomer.pretreatment.validate.aspect.ParamValidateAspect,\
+  com.isomer.pretreatment.generate.aspect.ValueGenerateAspect

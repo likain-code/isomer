@@ -1,5 +1,8 @@
 package com.isomer.device.service;
 
+import com.isomer.common.pojo.ApiResult;
+import com.isomer.device.domain.DeviceBasic;
+
 /**
  * Description:
  *
@@ -8,5 +11,5 @@ package com.isomer.device.service;
  */
 public interface DeviceService {
 
-    void register(String id);
+    ApiResult register(DeviceBasic basic);
 }

@@ -18,6 +18,7 @@
     <module>isomer-messaging</module>
     <module>isomer-device</module>
     <module>isomer-api</module>
+    <module>isomer-pretreatment</module>
   </modules>
 
   <properties>
@@ -42,6 +43,11 @@
       <dependency>
         <groupId>com.isomer.api</groupId>
         <artifactId>isomer-api</artifactId>
+        <version>${isomer.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.isomer.aop</groupId>
+        <artifactId>isomer-pretreatment</artifactId>
         <version>${isomer.version}</version>
       </dependency>
       <dependency>
