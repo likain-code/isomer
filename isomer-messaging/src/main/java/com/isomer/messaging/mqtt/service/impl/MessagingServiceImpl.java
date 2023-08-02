@@ -1,5 +1,6 @@
 package com.isomer.messaging.mqtt.service.impl;
 
+import com.isomer.api.messaging.dto.DeviceStatusDTO;
 import com.isomer.api.messaging.service.MessagingService;
 import com.isomer.common.pojo.ApiResult;
 import org.apache.dubbo.config.annotation.DubboService;
@@ -14,7 +15,7 @@ import org.apache.dubbo.config.annotation.DubboService;
 public class MessagingServiceImpl implements MessagingService {
 
     @Override
-    public ApiResult<?> register(String id) {
+    public ApiResult<?> register(DeviceStatusDTO dto) {
         return ApiResult.succeed();
     }
 }

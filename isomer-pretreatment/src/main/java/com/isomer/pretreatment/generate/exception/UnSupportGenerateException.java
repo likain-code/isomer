@@ -1,4 +1,4 @@
-package com.isomer.pretreatment.exception;
+package com.isomer.pretreatment.generate.exception;
 
 import com.isomer.pretreatment.PretreatmentException;
 

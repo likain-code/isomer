@@ -13,12 +13,12 @@ import java.sql.Timestamp;
  */
 @SupportValidate
 @SupportGenerate
-public class DeviceBasic {
+public class DeviceInfo {
 
     private Long id;
     private Integer tag;
     private String name;
-    private String key;
+    private String secret;
     private String remark;
     private Timestamp createTime;
     private String createBy;
@@ -47,12 +47,12 @@ public class DeviceBasic {
         this.name = name;
     }
 
-    public String getKey() {
-        return key;
+    public String getSecret() {
+        return secret;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public void setSecret(String secret) {
+        this.secret = secret;
     }
 
     public String getRemark() {
@@ -85,7 +85,7 @@ public class DeviceBasic {
                 "id=" + id +
                 ", tag=" + tag +
                 ", name='" + name + '\'' +
-                ", key='" + key + '\'' +
+                ", secret='" + secret + '\'' +
                 ", remark='" + remark + '\'' +
                 ", createTime=" + createTime +
                 ", createBy='" + createBy + '\'' +

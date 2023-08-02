@@ -1,5 +1,6 @@
 package com.isomer.api.messaging.service;
 
+import com.isomer.api.messaging.dto.DeviceStatusDTO;
 import com.isomer.common.pojo.ApiResult;
 
 /**
@@ -10,5 +11,5 @@ import com.isomer.common.pojo.ApiResult;
  */
 public interface MessagingService {
 
-    ApiResult<?> register(String id);
+    ApiResult<?> register(DeviceStatusDTO dto);
 }

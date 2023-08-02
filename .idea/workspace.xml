@@ -5,51 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/logger/ILogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/logger/LoggerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/logger/impl/ErrorLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/logger/impl/InfoLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/logger/impl/WarnLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/test/java/com/isomer/common/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/exception/handler/IsomerDeviceExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/DeviceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/interceptor/InsertOpsInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/mapper/DeviceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/PretreatmentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/exception/UnSupportGenerateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/annotation/SupportGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/annotation/ValueGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/aspect/ValueGenerateAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/ParamValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/SupportValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/aspect/ParamValidateAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/exception/IllegalParamException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/exception/UnSupportValidateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/test/java/com/isomer/pretreatment/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/dto/DeviceStatusDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/SecretUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/SnowFlakeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/enums/Mode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/NamingParamValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/ParamValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/TypeParamValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/factory/ParamValidatorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/MessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/MessagingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/exception/IllegalOriginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/exception/IllegalOriginException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/IsomerDeviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/IsomerDeviceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/controller/DeviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/DeviceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/DeviceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/DeviceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/impl/DeviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/impl/DeviceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/init/MqttConnectionInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/init/MqttConnectionInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/AbstractMqttCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/AbstractMqttCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/DataCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/DataCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/EnableCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/EnableCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/resources/mapper/DeviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/mapper/DeviceMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/MessagingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/MessagingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/aspect/OriginCheckAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/aspect/OriginCheckAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/exception/handler/IsomerUserExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-user/src/main/java/com/isomer/user/exception/handler/IsomerUserExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/exception/UnSupportGenerateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/exception/UnSupportGenerateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/aspect/ValueGenerateAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/aspect/ValueGenerateAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/ParamValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/ParamValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/aspect/ParamValidateAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/aspect/ParamValidateAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -100,23 +77,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "zulu-1.8",
-    "last_opened_file_path": "/Users/likain/java-project/isomer/isomer-redis/src/main/java/com/isomer/redis",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.31350115",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "7b4190bfbdc3bf218c8d98df1b05bb00"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/likain/java-project/isomer/isomer-redis/src/main/java/com/isomer/redis&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31350115&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;073cc96dc8d53881a0dc8b75592b1cbf&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -128,6 +110,7 @@
       <recent name="com.isomer.pretreatment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.isomer.device.domain" />
       <recent name="com.isomer.user.exception" />
       <recent name="com.isomer.messaging.service.impl" />
     </key>
@@ -231,9 +214,9 @@
       <list>
         <item itemvalue="Spring Boot.IsomerDeviceApplication" />
         <item itemvalue="Spring Boot.IsomerMessagingApplication" />
+        <item itemvalue="JUnit.PushTest" />
         <item itemvalue="JUnit.AppTest.testLogger" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.PushTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +245,10 @@
       <workItem from="1690852837863" duration="11000" />
       <workItem from="1690852855313" duration="6507000" />
       <workItem from="1690866997365" duration="135000" />
-      <workItem from="1690867165686" duration="22602000" />
+      <workItem from="1690867165686" duration="24543000" />
+      <workItem from="1690937103287" duration="3831000" />
+      <workItem from="1690941653452" duration="1181000" />
+      <workItem from="1690943416613" duration="15246000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -320,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690813992754</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <option name="closed" value="true" />
+      <created>1690892718088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690892718088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">

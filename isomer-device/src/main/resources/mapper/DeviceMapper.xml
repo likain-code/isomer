@@ -5,6 +5,12 @@
 <mapper namespace="com.isomer.device.mapper.DeviceMapper">
 
   <insert id="insertDeviceInfo">
-    insert into device_basic()
+    insert into device_info (id, tag, name, secret, remark, create_time, create_by)
+    values (#{id}, #{tag}, #{name}, #{secret}, #{remark}, #{createTime}, #{createBy})
+  </insert>
+
+  <insert id="insertDeviceStatus">
+    insert into device_status (device_info_id)
+    values (#{deviceInfoId})
   </insert>
 </mapper>

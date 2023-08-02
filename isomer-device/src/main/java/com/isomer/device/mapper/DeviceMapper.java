@@ -1,6 +1,7 @@
 package com.isomer.device.mapper;
 
-import com.isomer.device.domain.DeviceBasic;
+import com.isomer.device.domain.DeviceInfo;
+import com.isomer.device.domain.DeviceStatus;
 
 /**
  * Description:
@@ -10,5 +11,7 @@ import com.isomer.device.domain.DeviceBasic;
  */
 public interface DeviceMapper {
 
-    int insertDeviceInfo(DeviceBasic basic);
+    int insertDeviceInfo(DeviceInfo info);
+
+    int insertDeviceStatus(DeviceStatus status);
 }

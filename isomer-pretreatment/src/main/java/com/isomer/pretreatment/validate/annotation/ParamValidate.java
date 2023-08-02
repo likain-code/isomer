@@ -1,5 +1,7 @@
 package com.isomer.pretreatment.validate.annotation;
 
+import com.isomer.pretreatment.validate.enums.Mode;
+
 import java.lang.annotation.*;
 
 /**
@@ -13,5 +15,9 @@ import java.lang.annotation.*;
 @Target(ElementType.PARAMETER)
 public @interface ParamValidate {
 
-    Class<?>[] types();
+    Mode mode() default Mode.NAMING;
+
+    Class<?>[] types() default {};
+
+    String[] names() default {};
 }

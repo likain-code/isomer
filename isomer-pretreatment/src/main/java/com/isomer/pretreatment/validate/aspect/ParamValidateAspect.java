@@ -2,17 +2,15 @@ package com.isomer.pretreatment.validate.aspect;
 
 import com.isomer.pretreatment.validate.annotation.ParamValidate;
 import com.isomer.pretreatment.validate.annotation.SupportValidate;
-import com.isomer.pretreatment.validate.exception.IllegalParamException;
 import com.isomer.pretreatment.validate.exception.UnSupportValidateException;
-import com.isomer.common.utils.StringUtil;
-import com.sun.istack.internal.NotNull;
+import com.isomer.pretreatment.validate.validator.ParamValidator;
+import com.isomer.pretreatment.validate.validator.factory.ParamValidatorFactory;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
@@ -45,40 +43,9 @@ public class ParamValidateAspect {
             }
 
             ParamValidate annotation = parameter.getAnnotation(ParamValidate.class);
-            Class<?>[] types = annotation.types();
-
-            Field[] fields = parameterType.getDeclaredFields();
-            for (Field field : fields) {
-                field.setAccessible(true);
-                Class<?> type = field.getType();
-
-                if (match(types, type)) {
-                    Object o = field.get(joinPoint.getArgs()[i]);
-                    if (type.equals(String.class)) {
-                        if (!field.getName().equals("createBy")) {
-                            String s = (String) o;
-                            if (StringUtil.isNullOrEmpty(s)) {
-                                throw new IllegalParamException(
-                                        "Field [" + field.getName() + "] cannot be null or empty");
-                            }
-                        }
-                    } else {
-                        if (o == null) {
-                            throw new IllegalParamException(
-                                    "Field [" + field.getName() + "] cannot be null");
-                        }
-                    }
-                }
-            }
+            ParamValidatorFactory factory = new ParamValidatorFactory();
+            ParamValidator validator = factory.create(annotation.mode());
+            validator.validate(joinPoint.getArgs()[i], annotation);
         }
-    }
-
-    private boolean match(@NotNull Class<?>[] classes, @NotNull Class<?> clazz) {
-        for (Class<?> c : classes) {
-            if (c == clazz) {
-                return true;
-            }
-        }
-        return false;
     }
 }

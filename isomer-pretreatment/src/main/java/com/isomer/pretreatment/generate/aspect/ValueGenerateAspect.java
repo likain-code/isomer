@@ -1,6 +1,7 @@
 package com.isomer.pretreatment.generate.aspect;
 
-import com.isomer.pretreatment.exception.UnSupportGenerateException;
+import com.isomer.common.utils.SnowFlakeUtil;
+import com.isomer.pretreatment.generate.exception.UnSupportGenerateException;
 import com.isomer.pretreatment.generate.annotation.SupportGenerate;
 import com.isomer.pretreatment.generate.annotation.ValueGenerate;
 import org.aspectj.lang.JoinPoint;
@@ -46,19 +47,35 @@ public class ValueGenerateAspect {
             }
 
             Field[] fields = parameterType.getDeclaredFields();
+            Field idField = getIdField(fields);
             Field createTimeField = getCreateTimeField(fields);
             Field createByField = getCreateByField(fields);
 
-            if (createTimeField != null) {
-                createTimeField.set(joinPoint.getArgs()[i], new Timestamp(System.currentTimeMillis()));
+            Object entity = joinPoint.getArgs()[i];
+            if (idField != null && idField.get(entity) == null) {
+                idField.set(entity, SnowFlakeUtil.nextId());
+            }
+
+            if (createTimeField != null && createTimeField.get(entity) == null) {
+                createTimeField.set(entity, new Timestamp(System.currentTimeMillis()));
             }
 
             RequestAttributes ra = RequestContextHolder.getRequestAttributes();
-            if (createByField != null && ra != null) {
+            if (createByField != null && ra != null && createByField.get(entity) == null) {
                 ServletRequestAttributes sra = (ServletRequestAttributes) ra;
-                createByField.set(joinPoint.getArgs()[i], sra.getRequest().getHeader("token"));
+                createByField.set(entity, sra.getRequest().getHeader("token"));
             }
         }
+    }
+
+    private Field getIdField(Field[] fields) {
+        for (Field field : fields) {
+            field.setAccessible(true);
+            if (field.getName().equals("id")) {
+                return field;
+            }
+        }
+        return null;
     }
 
     private Field getCreateTimeField(Field[] fields) {
