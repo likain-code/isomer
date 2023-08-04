@@ -1,5 +1,6 @@
 package com.isomer.device.exception.handler;
 
+import com.isomer.device.exception.DeviceRegisterTsException;
 import com.isomer.pretreatment.PretreatmentException;
 import com.isomer.common.enums.Status;
 import com.isomer.common.logger.LoggerUtil;
@@ -20,5 +21,11 @@ public class IsomerDeviceExceptionHandler {
     public ApiResult<?> handleParamValidateException(PretreatmentException e) {
         LoggerUtil.ERROR.print(IsomerDeviceExceptionHandler.class, e.getMessage(), e);
         return ApiResult.failed(Status.ILLEGAL_PARAM_EXCEPTION);
+    }
+
+    @ExceptionHandler(DeviceRegisterTsException.class)
+    public ApiResult<?> handleDeviceRegisterTsException(DeviceRegisterTsException e) {
+        LoggerUtil.ERROR.print(IsomerDeviceExceptionHandler.class, e.getMessage(), e);
+        return ApiResult.failed(Status.SERVER_FAILED);
     }
 }

@@ -33,6 +33,11 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        // Boolean b = null;
+        // if (b) {
+        //     System.out.println("hello");
+        // } else {
+        //     System.out.println("error");
+        // }
     }
 }

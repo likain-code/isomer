@@ -5,28 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a4ed599-aa6f-46fc-b8df-60f61baeaccd" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/dto/DeviceStatusDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/SecretUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/SnowFlakeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/enums/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/NamingParamValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/ParamValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/TypeParamValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/validator/factory/ParamValidatorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/dto/SelectedDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/IDeviceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/async/AsyncCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/constant/ErrorMsgConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/exception/RefException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/exception/TsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/MqttTopicUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/utils/ObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/dto/DeviceRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/exception/DeviceRegisterTsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/impl/IDeviceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/callback/AbstractMqttCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/callback/EnableCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/IMessagingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/MessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/MessagingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/controller/DeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/domain/DeviceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/dto/DeviceStatusDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/MessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-api/src/main/java/com/isomer/api/messaging/service/IMessagingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-common/src/main/java/com/isomer/common/enums/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/exception/handler/IsomerDeviceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/exception/handler/IsomerDeviceExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/DeviceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/mapper/DeviceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/DeviceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/impl/DeviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/java/com/isomer/device/service/impl/DeviceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomer-device/src/main/resources/mapper/DeviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/main/resources/mapper/DeviceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/MessagingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/MessagingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/exception/UnSupportGenerateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/exception/UnSupportGenerateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/aspect/ValueGenerateAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/generate/aspect/ValueGenerateAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/ParamValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/annotation/ParamValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/aspect/ParamValidateAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-pretreatment/src/main/java/com/isomer/pretreatment/validate/aspect/ParamValidateAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-device/src/test/java/com/isomer/device/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-device/src/test/java/com/isomer/device/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/config/MqttConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/config/MqttConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/init/MqttConnectionInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/init/MqttInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/AbstractMqttCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/DataCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/callback/DataCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/pull/EnableCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isomer-messaging/src/main/java/com/isomer/messaging/mqtt/service/impl/MessagingServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,18 +130,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.IsomerDeviceApplication">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="isomer-common" />
+  <component name="RunManager" selected="JUnit.AppTest.testApp">
+    <configuration name="AppTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="isomer-device" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.isomer.common.*" />
+          <option name="PATTERN" value="com.isomer.device.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.isomer.common" />
-      <option name="MAIN_CLASS_NAME" value="com.isomer.common.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.isomer.device" />
+      <option name="MAIN_CLASS_NAME" value="com.isomer.device.AppTest" />
+      <option name="METHOD_NAME" value="testApp" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.IsomerDeviceApplication" />
         <item itemvalue="Spring Boot.IsomerMessagingApplication" />
+        <item itemvalue="Spring Boot.IsomerDeviceApplication" />
+        <item itemvalue="JUnit.AppTest.testApp" />
         <item itemvalue="JUnit.PushTest" />
         <item itemvalue="JUnit.AppTest.testLogger" />
-        <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +257,11 @@
       <workItem from="1690867165686" duration="24543000" />
       <workItem from="1690937103287" duration="3831000" />
       <workItem from="1690941653452" duration="1181000" />
-      <workItem from="1690943416613" duration="15246000" />
+      <workItem from="1690943416613" duration="20134000" />
+      <workItem from="1691037417315" duration="1086000" />
+      <workItem from="1691038514245" duration="6573000" />
+      <workItem from="1691058097984" duration="3797000" />
+      <workItem from="1691113180365" duration="20339000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -314,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690892718088</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <option name="closed" value="true" />
+      <created>1690966471151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690966471151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -337,22 +358,6 @@
     <MESSAGE value="delete unsage test" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/apache-maven-3.8.7/respo/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.2.5/org.eclipse.paho.client.mqttv3-1.2.5.jar!/org/eclipse/paho/client/mqttv3/MqttAsyncClient.class</url>
-          <line>355</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/apache-maven-3.8.7/respo/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.2.5/org.eclipse.paho.client.mqttv3-1.2.5.jar!/org/eclipse/paho/client/mqttv3/MqttAsyncClient.class</url>
-          <line>317</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

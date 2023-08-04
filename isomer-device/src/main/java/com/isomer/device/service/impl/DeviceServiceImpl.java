@@ -1,11 +1,16 @@
 package com.isomer.device.service.impl;
 
-import com.isomer.api.messaging.dto.DeviceStatusDTO;
-import com.isomer.api.messaging.service.MessagingService;
+import com.isomer.api.messaging.service.IMessagingService;
+import com.isomer.common.async.AsyncCenter;
+import com.isomer.common.exception.RefException;
+import com.isomer.common.logger.LoggerUtil;
 import com.isomer.common.pojo.ApiResult;
+import com.isomer.common.utils.MqttTopicUtil;
 import com.isomer.common.utils.SecretUtil;
 import com.isomer.device.domain.DeviceInfo;
 import com.isomer.device.domain.DeviceStatus;
+import com.isomer.device.dto.DeviceRegisterDTO;
+import com.isomer.device.exception.DeviceRegisterTsException;
 import com.isomer.device.mapper.DeviceMapper;
 import com.isomer.device.service.DeviceService;
 import org.apache.dubbo.config.annotation.DubboReference;
@@ -15,8 +20,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
-
-import java.util.UUID;
 
 /**
  * Description:
@@ -31,27 +34,42 @@ public class DeviceServiceImpl implements DeviceService {
     private DeviceMapper deviceMapper;
     @Autowired
     private DataSourceTransactionManager transactionManager;
-    @DubboReference
-    private MessagingService messagingService;
+    @DubboReference(check = false)
+    private IMessagingService iMessagingService;
 
     @Override
     public ApiResult<?> register(DeviceInfo info) {
         TransactionDefinition td = new DefaultTransactionDefinition();
         TransactionStatus ts = transactionManager.getTransaction(td);
 
+        String secret = SecretUtil.gen();
+        info.setSecret(secret);
+        DeviceStatus status = new DeviceStatus();
+        status.setDeviceInfoId(info.getId());
+
         try {
-            info.setSecret(SecretUtil.gen());
             deviceMapper.insertDeviceInfo(info);
-
-            DeviceStatus status = new DeviceStatus();
-            status.setDeviceInfoId(info.getId());
             deviceMapper.insertDeviceStatus(status);
-
-            transactionManager.commit(ts);
-            return ApiResult.succeed();
-        } catch (Exception e) {
+        } catch (Throwable cause) {
             transactionManager.rollback(ts);
-            throw new RuntimeException(e);
+            throw new DeviceRegisterTsException("Exception occurred when device-register", cause);
         }
+        transactionManager.commit(ts);
+
+        AsyncCenter.commit(
+                () -> {
+                    try {
+                        iMessagingService.subscribe(MqttTopicUtil.genUpLink(info.getTag(), info.getId()));
+                    } catch (Exception e) {
+                        throw new RefException("subscribe", e);
+                    }
+                }
+        );
+
+        String upLink = MqttTopicUtil.genUpLink(info.getTag(), info.getId());
+        String downLink = MqttTopicUtil.genDownLink(info.getTag(), info.getId());
+
+        LoggerUtil.INFO.print(this.getClass(), "Device " + info.getId() + " register successfully");
+        return ApiResult.succeed(new DeviceRegisterDTO(upLink, downLink, secret));
     }
 }

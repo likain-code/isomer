@@ -1,8 +1,6 @@
 package com.isomer.messaging.mqtt.config;
 
 import com.isomer.messaging.mqtt.properties.MqttProperties;
-import com.isomer.messaging.mqtt.pull.DataCallback;
-import com.isomer.messaging.mqtt.pull.EnableCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -28,7 +26,6 @@ public class MqttConfig {
         MqttClient client;
         try {
             client = new MqttClient(properties.getHost(), genClientId(), null);
-            client.setCallback(new EnableCallback());
         } catch (MqttException e) {
             throw new RuntimeException(e);
         }
@@ -41,7 +38,6 @@ public class MqttConfig {
         MqttClient client;
         try {
             client = new MqttClient(properties.getHost(), genClientId(), null);
-            client.setCallback(new DataCallback());
         } catch (MqttException e) {
             throw new RuntimeException(e);
         }

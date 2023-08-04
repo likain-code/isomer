@@ -13,4 +13,36 @@
     insert into device_status (device_info_id)
     values (#{deviceInfoId})
   </insert>
+
+  <update id="enableDevice">
+    update device_status
+    set enable     = 1,
+        enable_time=#{param2}
+    where device_info_id = #{param1}
+  </update>
+
+  <select id="queryDeviceSecret" resultType="java.lang.String">
+    select secret
+    from device_info
+    where id = #{id}
+  </select>
+
+  <select id="queryIdCount" resultType="java.lang.Integer">
+    select count(id)
+    from device_info
+    where id = #{id}
+  </select>
+
+  <select id="querySelected" resultType="com.isomer.api.messaging.dto.SelectedDTO">
+    select id, tag
+    from device_info di
+           left join device_status ds on di.id = ds.device_info_id
+    where enable = #{enable}
+  </select>
+
+  <select id="queryDeviceEnable" resultType="java.lang.Integer">
+    select enable
+    from device_status
+    where device_info_id = #{id}
+  </select>
 </mapper>
