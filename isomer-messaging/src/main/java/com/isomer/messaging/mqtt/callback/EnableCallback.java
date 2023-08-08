@@ -27,6 +27,8 @@ public class EnableCallback extends AbstractMqttCallback {
 
     @Override
     public void connectionLost(Throwable throwable) {
+        LoggerUtil.ERROR.print(this.getClass(),
+                enable.getClientId() + " has lost connection to mqtt server, trying to reconnect");
     }
 
     @Override
@@ -47,5 +49,15 @@ public class EnableCallback extends AbstractMqttCallback {
 
     @Override
     public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
+    }
+
+    @Override
+    public void connectComplete(boolean isReconnect, String serverUrl) {
+        if (!isReconnect) {
+            LoggerUtil.INFO.print(this.getClass(),
+                    enable.getClientId() + " has successfully connected to server " + serverUrl);
+        } else {
+            afterReconnection(enable, iDeviceService, false, serverUrl);
+        }
     }
 }

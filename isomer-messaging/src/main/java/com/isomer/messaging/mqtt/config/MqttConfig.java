@@ -1,6 +1,9 @@
 package com.isomer.messaging.mqtt.config;
 
+import com.isomer.api.messaging.service.IDeviceService;
+import com.isomer.messaging.mqtt.exception.basic.ConfigurationException;
 import com.isomer.messaging.mqtt.properties.MqttProperties;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -20,6 +23,9 @@ import java.util.UUID;
 @EnableConfigurationProperties(MqttProperties.class)
 public class MqttConfig {
 
+    @DubboReference(check = false)
+    private IDeviceService iDeviceService;
+
     @Bean("enable")
     @ConditionalOnProperty(value = "mqtt.enable", havingValue = "true")
     public MqttClient enable(MqttProperties properties) {
@@ -27,7 +33,7 @@ public class MqttConfig {
         try {
             client = new MqttClient(properties.getHost(), genClientId(), null);
         } catch (MqttException e) {
-            throw new RuntimeException(e);
+            throw new ConfigurationException("Error occurred in configuration of enable client", e);
         }
         return client;
     }
@@ -39,7 +45,7 @@ public class MqttConfig {
         try {
             client = new MqttClient(properties.getHost(), genClientId(), null);
         } catch (MqttException e) {
-            throw new RuntimeException(e);
+            throw new ConfigurationException("Error occurred in configuration of data client", e);
         }
         return client;
     }
